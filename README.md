@@ -53,7 +53,7 @@ y_hat.backward()  # populates .grad on every Value in the graph
 
 ## Background
 
-I wrote up the full walkthrough — the reasoning behind each design decision, the chain rule derivation, and common gotchas (like the topological sort ordering bug) — as a blog post. [Link coming once it's published / see `blog.md` in this repo for now.]
+I wrote up the full walkthrough — the reasoning behind each design decision, the chain rule derivation, and common gotchas — as a blog post. [Link coming once it's published / see `blog.md` in this repo for now.]
 
 ## Acknowledgements
 
