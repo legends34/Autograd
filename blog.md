@@ -250,6 +250,8 @@ The Layer and MLP classes will remain the same.
 
 ### Training loop
 ```python
+# while defining the model , ensure torch = True
+model = MLP(n_in , n_outs , torch = True)
 for epoch in range(epochs):
 	# forward pass
 	y_hat = model(X) # making predictions.
