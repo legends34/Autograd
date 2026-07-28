@@ -155,8 +155,8 @@ for the forward pass , we will be iterating through each neuron , pass the input
 
 ```python
 class Layer:
-	def __init__(self , n_in , n_out):
-		self.neurons = [Neuron(n_in) for _ in range(n_out)]
+	def __init__(self , n_in , n_out , torch = False):
+		self.neurons = [Neuron(n_in) for _ in range(n_out)] if not torch else [Neuron_torch(n_in) for _ in range(n_out)]
 		
 	def __call__(self , x):
 		return [neuron(x) for neuron in self.neurons]
